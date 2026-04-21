@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glass-card {
+    /* Cor de fundo com transparência */
+    background: rgba(255, 255, 255, 0.1);
+    
+    /* Desfoque para aparência de vidro */
+    backdrop-filter: blur(10px);
+    
+    /* Borda para acabamento */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* Arredondamento dos cantos */
+    border-radius: 15px;
+    
+    /* Espaçamento interno */
+    padding: 20px;
+}
+
+.card-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
