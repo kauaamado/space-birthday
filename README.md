@@ -20,11 +20,6 @@ A stunning web application that fetches and displays the actual NASA Astronomy P
 
 ## 🔧 Installation & Setup
 
-### Prerequisites
-
-- **Node.js** (v16 or higher recommended)
-- **npm** (usually comes with Node.js)
-
 ### Steps
 
 1. **Clone the repository**:
@@ -34,43 +29,23 @@ A stunning web application that fetches and displays the actual NASA Astronomy P
     cd space-birthday
     ```
 
-2. **Install dependencies**:
+2. **Configuration**:
+    Create a `env.js` file in the root directory:
 
-    ```bash
-    npm install
+    ```js
+    API_KEY=your_actual_key_here
     ```
-
-3. **Configuration (Optional)**:
-    If you want to use your own NASA API key, create a `.env` file in the root directory:
-
-    ```env
-    VITE_NASA_API_KEY=your_actual_key_here
-    ```
-
-4. **Run the development server**:
-
-    ```bash
-    npm run dev
-    ```
-
-5. Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
 
 ## 📂 Project Structure
 
 ```directory
 
 space-birthday/
-├── public/             # Static assets
-├── src/
-│   ├── api/            # API configuration
-│   ├── components/     # Reusable UI components
-│   ├── views/          # Main views (Home)
-│   ├── App.vue         # Root component
-│   └── main.js         # Entry point
-├── .env                # Environment variables (API Key)
-├── index.html          # HTML entry point
-├── package.json        # Project dependencies and scripts
-└── README.md           # Project documentation
+├── env.js          # Environment variables (API Key)
+├── index.html      # HTML entry point
+├── README.md       # Project documentation
+├── script.js       # Main scripts
+└── style.css       # Main styles
 
 ```
 
