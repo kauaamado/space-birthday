@@ -98,6 +98,12 @@ button:hover {
     background-color: #0056b3;
 }
 
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #0056b3;
+}
+
 footer {
     text-align: center;
     padding: 1rem;
