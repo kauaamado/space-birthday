@@ -8,8 +8,8 @@ export async function getSpacePhoto(date, retries = 3) {
         const response = await fetch(url);
         
         if (response.status === 503 && retries > 0) {
-            console.warn("NASA instável, tentando novamente...");
-            await new Promise(res => setTimeout(res, 1500)); // Espera 1.5s
+            console.warn("NASA is sleeping, try another date.");
+            await new Promise(res => setTimeout(res, 1500)); 
             return getSpacePhoto(date, retries - 1);
         }
 
