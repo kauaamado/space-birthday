@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+    min-height: 100dvh;
+    background: linear-gradient(to bottom, #0a192f 0%, #020c1b 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    min-height: 100dvh;
+}
+
 .glass-card {
     /* Cor de fundo com transparência */
     background: rgba(255, 255, 255, 0.1);
@@ -18,12 +30,12 @@
     border-radius: 15px;
     
     /* Espaçamento interno */
-    padding: 20px;
+    padding: 2rem;
 }
 
 .card-image {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 1.5rem;
 }
 
 body {
@@ -40,5 +52,61 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.search-controls {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#result-container {
+    margin: 0 1rem;
+}
+
+/* Estilo para os inputs */
+input[type="date"] {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 1rem 2rem;
+    background-color: #036ad8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #036ad8;
+    color: white;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
 }
