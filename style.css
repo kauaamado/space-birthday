@@ -14,12 +14,18 @@ body {
     font-family: 'Outfit', sans-serif;
     color: #ffffff;
     min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 .glass-card {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1rem);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
     border-radius: 5rem;
     padding: 1rem;
 }
@@ -29,24 +35,29 @@ body {
     border-radius: 1.5rem;
 }
 
-header {
-    padding: 1rem;
-}
-
 nav ul {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    border: 0.1rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
 }
 
 .hero {
     text-align: center;
     padding: 2rem;
+    font-size: 5rem;
+}
+
+.hero p {
+    font-size: 2.5rem;
 }
 
 .search-controls {
-    margin-top: 2rem;
+    margin: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,26 +65,29 @@ nav ul {
 }
 
 #result-container {
-    margin: 0 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 60rem;
 }
 
-/* Estilo para os inputs */
 input[type="date"] {
     padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 1rem;
     font-size: 1.6rem;
 }
 
-/* Estilo para os botões */
 button {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: #036ad8;
     color: white;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 button:hover {
@@ -84,14 +98,11 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    background-color: #036ad8;
+    background-color: #253e62;
     color: white;
-    margin-top: 2rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    height: 3rem;
+    height: 4rem;
 }
