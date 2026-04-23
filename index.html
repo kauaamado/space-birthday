@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the Astronomy Picture of the Day from the date you were born. Explore the cosmos through NASA's API.">
     <meta name="keywords" content="space, birthday, nasa, apod, astronomy, cosmos">
-    <title>Space Birthday | NASA Photo of the Day</title>
+    <title>Space Birthday</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,13 +22,13 @@
     <main>
         <section class="hero" aria-labelledby="hero-title">
             <h1 id="hero-title">Space Birthday</h1>
-            <p>Get to know the photo of the day of your birthday!</p>
-            
-            <div class="search-controls">
-                <label for="date-input">Select your birthday:</label>
-                <input type="date" id="date-input" min="1995-06-16" aria-required="true">
-                <button id="search-btn" aria-controls="result-container">Search</button>
-            </div>
+            <p>Get to know the cosmic photo of the day of your birthday!</p>
+        </section>
+
+        <section class="search-controls">
+            <label for="date-input">Select your birthday:</label>
+            <input type="date" id="date-input" min="1995-06-16" aria-required="true">
+            <button id="search-btn" aria-controls="result-container">Search</button>
         </section>
 
         <section id="result-container" aria-live="polite" aria-atomic="true"></section>
