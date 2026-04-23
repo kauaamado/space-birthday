@@ -41,11 +41,15 @@ A stunning web application that fetches and displays the actual NASA Astronomy P
 ```directory
 
 space-birthday/
-├── env.js          # Environment variables (API Key)
-├── index.html      # HTML entry point
-├── README.md       # Project documentation
-├── script.js       # Main scripts
-└── style.css       # Main styles
+├── assets/
+│   └── logo.png
+├── src/
+│   ├── api.js          # Logic for fetching data from NASA APOD API
+│   ├── index.html      # HTML entry point
+│   ├── script.js       # Main scripts
+│   ├── style.css       # Main styles
+│   └── ui.js           # UI components
+└── env.js              # Environment variables (API Key)
 
 ```
 
