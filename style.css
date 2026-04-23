@@ -73,6 +73,10 @@ nav ul {
     max-width: 60rem;
 }
 
+#result-container .card-title {
+    margin: 1.4rem 0;
+}
+
 input[type="date"] {
     padding: 1rem;
     border: 0.1rem solid #ccc;
