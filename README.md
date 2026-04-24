@@ -46,9 +46,9 @@ space-birthday/
 ├── src/
 │   ├── api.js          # Logic for fetching data from NASA APOD API
 │   ├── index.html      # HTML entry point
-│   ├── script.js       # Main scripts
+│   ├── script.js       # Main script
 │   ├── style.css       # Main styles
-│   └── ui.js           # UI components
+│   ├── ui.js           # UI components
 └── env.js              # Environment variables (API Key)
 
 ```
